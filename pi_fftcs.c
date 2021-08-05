@@ -254,7 +254,7 @@ main (int argc, char *argv[])
   mp_sprintf (n - 1, log10_radix, a, dgt);
   elap_time += ((double) clock () - (double) start_time) / CLOCKS_PER_SEC;
 
-  sprintf (filename, "pi%i.txt", log10_radix * (n - 2));
+  sprintf (filename, "/tmp/pi.txt", log10_radix * (n - 2));
 
   f_out = fopen (filename, "w");
 #ifndef QUIET_OUT
